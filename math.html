@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geekybrains</title>
+    <link rel="stylesheet" href="maths.css">
+    <style>
+        
+.butt {
+  background-color: #04AA6D; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border:4px solid black;
+}
+
+.button5{
+     height:60px;
+     width:100px;
+    border-radius: 65%;
+}
+.button6:hover {
+background-Color:pink;
+}
+        </style>
+
+    </style>
+</head>
+<body>
+    
+    <table align="center" style="width:100%;"> 
+    <tr align="center">
+      
+        <td align="center" style="width:50px;height:0px;" >
+    <img src="12.png" align="center" style="width:300px;height:65px;">
+    </td>
+    </tr>
+    </table>
+<a href="notes.html"><button class="butt button5 button6" style="background-color:#088F8F"> back</button></a>
+    <button style="width:100%;text-align:center;font-size:20px;background-color:#088F8F;">Mathematics Pratice Sheet </button>
+    
+    <button class="accordion">Matrices</button>
+    <div class="panel">
+    <embed src="mat.html" style="width:100%;height:700px;margin-top:-98px;"> </embed>
+    </div>
+    
+    <button class="accordion">Determinants</button>
+    <div class="panel">
+        
+    <embed src="deter.html " style="width:100%;height:700px;margin-top:-98px;"> </embed>
+    </div>
+    
+    <button class="accordion">Complex Number</button>
+    <div class="panel">
+        
+    <embed src="complex.html " style="width:100%;height:700px;margin-top:-98px;"> </embed>
+    </div>
+    <button class="accordion">Roots Of Equtions </button>
+    <div class="panel">
+        
+    <embed src="qu.pdf" style="width:1600px;height:700px;margin-top:-75px;"> </embed>
+    </div>
+    
+    
+    <button class="accordion">Limit and Continuity </button>
+    <div class="panel">
+        
+    <embed src="limit.html " style="width:100%;height:700px;margin-top:-98px;"> </embed>
+    </div>
+    <button class="accordion">Differentiation</button>
+    <div class="panel">
+        
+    <embed src="differe.html "  style="width:100%;height:700px;margin-top:-98px;"> </embed>
+    </div>
+    
+    <button class="accordion">Integration</button>
+    <div class="panel">
+        
+    <embed src="inte.html " style="width:100%;height:500px;margin-left:100px;" align="center"> </embed>
+    
+    </div>
+    <div class="panel">
+        
+    <embed src="inte.html " style="width:100%;height:500px;margin-left:300px;" align="center"> </embed>
+    
+    </div>
+    
+    <button class="accordion">Fourier Series</button>
+    <div class="panel">
+        
+    <embed src="Fourier.html " style="width:100%;height:500px;margin-top:-98px;"> </embed>
+    </div>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+    
+</body>
+</html>
